@@ -1,3 +1,4 @@
+// Activity 1 Variables activity
 let name = "Aaron John Cortado Lozano";
 let whatDoYouWannaBecomeInYourLife = "programmer";
 let gender = "male";
