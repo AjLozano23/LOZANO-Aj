@@ -1,3 +1,4 @@
+// my information
 var name = "Aaron John Cortado Lozano";
 var birthDate = "April 23, 2003";
 var birthPlace = "Calaoa-an, Candon City, Ilocos Sur, Philippines 2710";
@@ -9,6 +10,7 @@ var dreamJob = "Game Developer";
 console.log(name.toUpperCase() + " was born " + birthDate + " at " + birthPlace.toUpperCase() + ", and currently living at " + address.toUpperCase()+".");
 console.log(name.toLowerCase() + " is taking up " + course.toLowerCase() + " and dreams to be " + dreamJob + " after graduation.");
 
+ // Classmate’s Student information
 var nameCM = "Aureo Leaño Capellan";
 var birthDateCM = "April 11, 2005";
 var birthPlaceCM = "Tamurong primero, Candon City, Ilocos Sur, Philippines 2710";
