@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Customer Login</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Customer Login</h2>
+  <form id="loginForm">
+    <label>Username: <input type="text" id="username" required /></label><br/><br/>
+    <label>Password: <input type="password" id="password" required /></label><br/><br/>
+    <button type="submit">Login</button>
+  </form>
+  <p id="error" style="color:red;"></p>
+
+<script>
+const customers = [
+  { username: "customer1", password: "pass123" },
+  { username: "customer2", password: "pass456" }
+];
+
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const username = document.getElementById('username').value.trim();
+  const password = document.getElementById('password').value.trim();
+
+  const user = customers.find(u => u.username === username && u.password === password);
+  if(user) {
+    localStorage.setItem('customerUser', username);
+    window.location.href = 'customer_reservation.html';
+  } else {
+    document.getElementById('error').textContent = "Invalid username or password.";
+  }
+});
+</script>
+</body>
+</html>

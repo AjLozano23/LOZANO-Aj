@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Customer Reservation</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Customer Reservation</h2>
+  <button id="logoutBtn">Logout</button>
+  <br/><br/>
+
+  <label for="busSelect">Select Bus:</label>
+  <select id="busSelect">
+    <option value="Cubao">Cubao</option>
+    <option value="Baguio">Baguio</option>
+    <option value="Pasay">Pasay</option>
+  </select>
+  <button id="checkSeatsBtn">Check My Reservation</button>
+  <div id="reservationInfo" style="margin-top:20px;"></div>
+
+<script>
+if(!localStorage.getItem('customerUser')) {
+  alert('Please login first!');
+  window.location.href = 'customer_login.html';
+}
+
+const logoutBtn = document.getElementById('logoutBtn');
+const busSelect = document.getElementById('busSelect');
+const checkSeatsBtn = document.getElementById('checkSeatsBtn');
+const reservationInfo = document.getElementById('reservationInfo');
+const customerUser = localStorage.getItem('customerUser');
+
+logoutBtn.onclick = () => {
+  localStorage.removeItem('customerUser');
+  window.location.href = 'customer_login.html';
+};
+
+checkSeatsBtn.onclick = () => {
+  const buses = JSON.parse(localStorage.getItem('buses'));
+  const selectedBus = busSelect.value;
+  const seats = buses[selectedBus];
+  reservationInfo.innerHTML = '';
+
+  // Find all seats reserved by this customer
+  const reservedSeats = [];
+  seats.forEach((seat, idx) => {
+    if(seat === customerUser) {
+      reservedSeats.push(idx + 1);
+    }
+  });
+
+  if(reservedSeats.length > 0) {
+    reservationInfo.innerHTML = `You have reserved seat(s): ${reservedSeats.join(', ')} on the ${selectedBus} bus.`;
+  } else {
+    reservationInfo.innerHTML = `No reservation found on the ${selectedBus} bus.`;
+  }
+};
+</script>
+</body>
+</html>

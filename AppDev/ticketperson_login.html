@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ticket Person Login</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Ticket Person Login</h2>
+  <form id="loginForm">
+    <label>Username: <input type="text" id="username" required /></label><br/><br/>
+    <label>Password: <input type="password" id="password" required /></label><br/><br/>
+    <button type="submit">Login</button>
+  </form>
+  <p id="error" style="color:red;"></p>
+
+<script>
+const users = [
+  { username: "admin", password: "admin123" },
+  { username: "manager", password: "manager456" }
+];
+
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const username = document.getElementById('username').value.trim();
+  const password = document.getElementById('password').value.trim();
+
+  const user = users.find(u => u.username === username && u.password === password);
+  if(user) {
+    localStorage.setItem('ticketpersonUser', username);
+    window.location.href = 'ticketperson_reservation.html';
+  } else {
+    document.getElementById('error').textContent = "Invalid username or password.";
+  }
+});
+</script>
+</body>
+</html>

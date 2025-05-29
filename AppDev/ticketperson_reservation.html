@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ticket Person Reservation</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Ticket Person Reservation Management</h2>
+  <button id="logoutBtn">Logout</button>
+  <br/><br/>
+
+  <label for="busSelect">Select Bus:</label>
+  <select id="busSelect">
+    <option value="Cubao">Cubao</option>
+    <option value="Baguio">Baguio</option>
+    <option value="Pasay">Pasay</option>
+  </select>
+  <button id="showSeatsBtn">Show Seats</button>
+  <div id="seatsContainer" style="margin-top:20px;"></div>
+
+  <script>
+  // Initialize bus seat data if not present
+  if(!localStorage.getItem('buses')) {
+    const buses = {
+      Cubao: Array(30).fill(null),
+      Baguio: Array(30).fill(null),
+      Pasay: Array(30).fill(null)
+    };
+    localStorage.setItem('buses', JSON.stringify(buses));
+  }
+
+  // Check if user is logged in
+  if(!localStorage.getItem('ticketpersonUser')) {
+    alert('Please login first!');
+    window.location.href = 'ticketperson_login.html';
+  }
+
+  const logoutBtn = document.getElementById('logoutBtn');
+  const busSelect = document.getElementById('busSelect');
+  const showSeatsBtn = document.getElementById('showSeatsBtn');
+  const seatsContainer = document.getElementById('seatsContainer');
+
+  logoutBtn.onclick = () => {
+    localStorage.removeItem('ticketpersonUser');
+    window.location.href = 'ticketperson_login.html';
+  };
+
+  function renderSeats(busName) {
+    const buses = JSON.parse(localStorage.getItem('buses'));
+    const seats = buses[busName];
+    seatsContainer.innerHTML = '';
+
+    seats.forEach((seat, index) => {
+      const seatDiv = document.createElement('div');
+      seatDiv.style.marginBottom = '5px';
+
+      seatDiv.textContent = `Seat ${index + 1}: ${seat ? seat : 'AVAILABLE'}`;
+
+      const btn = document.createElement('button');
+      btn.style.marginLeft = '10px';
+
+      if(seat === null) {
+        btn.textContent = 'Reserve';
+        btn.onclick = () => {
+          const customerName = prompt('Enter customer name to reserve this seat:');
+          if(customerName && customerName.trim() !== '') {
+            seats[index] = customerName.trim();
+            localStorage.setItem('buses', JSON.stringify(buses));
+            renderSeats(busName);
+          }
+        };
+      } else {
+        btn.textContent = 'Cancel Reservation';
+        btn.onclick = () => {
+          if(confirm(`Cancel reservation for ${seat} at seat ${index + 1}?`)) {
+            seats[index] = null;
+            localStorage.setItem('buses', JSON.stringify(buses));
+            renderSeats(busName);
+          }
+        };
+      }
+      seatDiv.appendChild(btn);
+      seatsContainer.appendChild(seatDiv);
+    });
+  }
+
+  showSeatsBtn.onclick = () => {
+    const selectedBus = busSelect.value;
+    renderSeats(selectedBus);
+  };
+  </script>
+</body>
+</html>
