@@ -1,0 +1,210 @@
+Microsoft Windows [Version 10.0.26100.4770]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\sneyq>cd Downloads
+
+C:\Users\sneyq\Downloads>md LOZANO_AJ_OS-LQ1
+
+C:\Users\sneyq\Downloads>cd LOZANO_AJ_OS-LQ1
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1>mkdir src common installer cache user
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1>cd src
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\src>md a\b\c\d\e\f\g
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\src>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1>cd common
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\common>md h\i\j\k\l\m
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\common>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1>cd cache
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\cache>md a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\cache>rd /s /q a
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\cache>md a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\cache>md 1 2 3 4 5 6 7 8 9 10
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\cache>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1>cd user
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>md user_jerico user_eliza user_juan
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_jerico
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico>md user_profile user_user_settings user_preferences
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico>cd user_profile
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_profile>md "jerico estabillo"
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_profile>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico>cd user_settings
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico>ren user_user_settings user_settings
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico>cd user_settings
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings>md OSversion AppVersion
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_eliza
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>md user_profile user_settings user_preferences
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>cd user_profile
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_profile>md eliza
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_profile>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>cd user_settings
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_settings>md OSversion AppVersion
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_settings>cd
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_settings
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_settings>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_juan
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan>md user_profile user_settings user_preferences
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan>cd user_profile
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_profile>md Juan
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_profile>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan>cd user_settings
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_settings>md OSversion AppVersion
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_settings>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan>cd user_profile
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_profile>ren Juan Juan Pablo
+The syntax of the command is incorrect.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_profile>ren Juan "Juan Pablo"
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_profile>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_eliza
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>cd user_profile
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_profile>ren eliza "Eliza Taylor"
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_profile>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_jerico\user_settings\AppVersion
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings\AppVersion> md sampleApp_v2 sampleApp_v3 sampleApp_v5
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings\AppVersion>move C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings\AppVersion\sampleAppv3 C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_settings
+The system cannot find the file specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings\AppVersion>move C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings\AppVersion\sampleApp_v3 C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_settings
+        1 dir(s) moved.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings\AppVersion>move C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings\AppVersion\sampleApp_v5 C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_settings
+        1 dir(s) moved.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings\AppVersion>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings>rd OSversion
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\user_settings>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_juan\user_settings
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_settings>rd OSversion
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan\user_settings>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_juan>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_elizia
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_eliza\user_settings
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_settings>rd OSversion
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\user_settings>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>ren user_preferences mode THEN move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user_eliza\mode C:LOZANO_AJ_OS-LQ1\installer
+The syntax of the command is incorrect.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>ren user_preferences mode AND move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user_eliza\mode C:LOZANO_AJ_OS-LQ1\installer
+The syntax of the command is incorrect.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>ren user_preferences mode && move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user_eliza\mode C:LOZANO_AJ_OS-LQ1\installer
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>cd user_preferences
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>cd mode
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\mode>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user_eliza\mode C:LOZANO_AJ_OS-LQ1\installer
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user_eliza\mode C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\installer
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza\mode C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\installer
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza> move mode C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\installer
+        1 dir(s) moved.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_eliza>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd user_jerico
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico> ren user_preferences mode && move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user_jerico\mode C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\installer
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico> ren user_preferences mode && move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico\mode C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\installer
+The system cannot find the file specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico> move C:\User\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user_jerico\mode C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\installer
+The system cannot find the path specified.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico> move mode C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\installer
+Overwrite C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\installer\mode? (Yes/No/All): No
+        1 dir(s) moved.
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user\user_jerico>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1\user>cd..
+
+C:\Users\sneyq\Downloads\LOZANO_AJ_OS-LQ1>cd..
+
+C:\Users\sneyq\Downloads>
